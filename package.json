@@ -4,8 +4,7 @@
   "description": "The reverse paywall. Make your content vanish.",
   "type": "module",
   "scripts": {
-    "build": "tsup src/index.tsx --format cjs,esm --dts",
-    "prepublishOnly": "npm run build"
+    "build": "tsup src/index.tsx --format cjs,esm --dts"
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -19,6 +18,10 @@
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/SemStassen/react-vanish"
+  },
   "peerDependencies": {
     "react": "^18.0.0 || ^19.0.0",
     "@types/react": "^18.0.0 || ^19.0.0",
