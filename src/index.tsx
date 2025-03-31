@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-interface ReactVanishProps {
+interface VanishProps {
   targetDate: Date;
   fadeDuration?: number;
   fadeChildren?: boolean;
@@ -8,13 +8,13 @@ interface ReactVanishProps {
   className?: string;
 }
 
-function ReactVanish({
+function Vanish({
   targetDate,
   fadeDuration = 30,
   fadeChildren = false,
   children,
   className,
-}: ReactVanishProps) {
+}: VanishProps) {
   const [opacity, setOpacity] = useState(1);
 
   useEffect(() => {
@@ -56,5 +56,5 @@ function ReactVanish({
   );
 }
 
-export type { ReactVanishProps };
-export default ReactVanish;
+export type { VanishProps };
+export default Vanish;
