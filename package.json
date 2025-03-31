@@ -1,10 +1,13 @@
 {
   "name": "react-vanish",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The reverse paywall. Make your content vanish.",
   "type": "module",
   "scripts": {
     "build": "tsup src/index.tsx --format cjs,esm --dts"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",

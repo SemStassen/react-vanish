@@ -22,7 +22,7 @@ yarn add react-vanish
 bun add react-vanish
 ```
 
-2. Wrap your app in the magical <Vanish> component.
+2. Wrap your app in the magical `<Vanish>` component.
 3. Set your payment deadline.
 4. Sit back and watch users panic.
 
